@@ -1,0 +1,78 @@
+.tile {
+    -webkit-transition: 1.0s;
+    -moz-transition: 1.0s;
+    -o-transition: 1.0s;
+    -ms-transition: 1.0s;
+
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;	
+
+    width: 240px;
+    height: 240px;
+}
+
+.big
+{
+    width: 500px;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 1.0s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 1.0s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 1.0s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 1.0s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 1.0s;
+    transform-style: preserve-3d;	
+
+    position: absolute;
+    vertical-align: text-bottom;
+}
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.tile.flip
+{
+    z-index:1000;
+    position:absolute;
+    box-shadow: none;
+}
+
+.tile.flip .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.tile.flip .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.front {
+    z-index: 2;
+}

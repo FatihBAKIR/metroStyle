@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fatih BAKIR</title>
+        <link href="mainStyle.css" rel="stylesheet" type="text/css" />
+        <link href="flipStyle.css" rel="stylesheet" type="text/css" />
+        <script src="jquery.min.js"></script>
+        <script src="MetroStyle.js"></script>
+        <script src="jquery.mousewheel.js"></script>
+        <script src="jquery.transit.min.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="headerText">Hoşgeldiniz</div>
+            <div class="userDiv" style="display:table-cell; vertical-align:middle;" >
+                <img src="resources/user.png" width="64" height="64" />
+                <div style="width: 20px">&nbsp;</div>
+                <div>Fatih BAKIR</div>
+            </div>
+        </div>
+        <div class="mainContainer"></div>
+    </body>
+</html>
+<script>
+    $(".header").css("width", getViewport()[0]);
+
+    MetroInit();
+    AddTile("SimpFile", "http://indir.fatihbakir.net", false, "#06F", null, "icons/indir.png");
+    AddTile("Lisans Sistemi", "http://fatihbakir.net/lisans/yonetim", false, "#800080", null, "icons/lisans.png");
+    AddTile("Blog Anasayfası", "http://blog.fatihbakir.net", true, "icons/blogBG.png", "#fe7323", "icons/blog.png");
+    AddTile("ÖSYM Sonuç Takip Sistemi", "http://fatihbakir.net/aciklandimi/", false, "#cfaf00", null, "icons/aciklandimi.png");
+    AddTile("SimpAuth", "http://blog.fatihbakir.net/category/projeler/simpauth/", false, "#c86300", null, "icons/simpauth.png");
+    MetroNextTile();
+    AddTile("QueryWizard", "http://blog.fatihbakir.net/category/projeler/querywizard/", false, "#729800", null, "icons/wizard.png");
+    AddTile("GitHub Profilim", "https://github.com/FatihBAKIR", false, "#007399", null, "icons/github.png");
+    AddTile("RapiCode", "http://rapicode.com", true, "icons/rapicodeBG.png", "#292929", "icons/rapicode.png");
+    MetroNextRow();
+    MetroNextRow();
+    AddTile("DiceNations", "http://www.youtube.com/user/DiceNations", true, "#500001", null, "icons/dicenations.png");
+    AddTile("İletişim", "http://blog.fatihbakir.net/iletisim/", false, "#00b2b4", null, "icons/iletisim.png");
+    AddTile("MetroStyle Hakkında", "http://blog.fatihbakir.net/metro/", false, "#004c5e", null, "icons/hakkinda.png");
+    MetroDone();
+</script>

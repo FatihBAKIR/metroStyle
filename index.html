@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="mainStyle.css" rel="stylesheet" type="text/css" />
+        <link href="flipStyle.css" rel="stylesheet" type="text/css" />
+        <script src="jquery.min.js"></script>
+        <script src="Metro.js"></script>
+        <script src="jquery.mousewheel.js"></script>
+        <script src="jquery.transit.min.js"></script>
+    </head>
+    <body>
+        <div class="mainContainer"></div>
+    </body>
+</html>
+
+<script>
+    
+var m = new Metro("mainContainer");
+
+var x = new Tile("SimpFile", "icons/indir.png", "#06F", "#06F", false);
+x.Anchor("http://indir.fatihbakir.net");
+m.Tiles.push(x);
+
+var x = new Tile("$nextTile", "", "", "", false);
+m.Tiles.push(x);
+
+var x = new Tile("RAPICODE", "icons/rapicode.png", "icons/rapicodeBG.png", "#292929", false);
+x.Anchor("http://www.rapicode.com");
+m.Tiles.push(x);
+var x = new Tile("RAPICODE", "icons/rapicode.png", "icons/rapicodeBG.png", "#292929", true);
+x.Anchor("http://www.rapicode.com");
+m.Tiles.push(x);
+
+m.Draw();
+</script>
